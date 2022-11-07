@@ -1,23 +1,29 @@
-// Get the current date
-let today = new Date();
+// <................... w3resource ...................>
 
-// Get the year of the current date
-let christmasYear = today.getFullYear();
-
-// Check if the current date is already past by checking if the month is December and the current day is greater than 25
+today = new Date();
+var cmas = new Date(today.getFullYear(), 11, 25);
 if (today.getMonth() == 11 && today.getDate() > 25) {
-  // Add an year so that the next Christmas date could be used
-  christmasYear = christmasYear + 1;
+  cmas.setFullYear(cmas.getFullYear() + 1);
 }
+var one_day = 1000 * 60 * 60 * 24;
+console.log(Math.ceil((cmas.getTime() - today.getTime()) / (one_day)) +
+  " days left until Christmas!");
 
-// Get the date of the next Christmas
-let christmasDate = new Date(christmasYear, 11, 25);
 
-// Get the number of milliseconds in 1 day
-let dayMilliseconds = 1000 * 60 * 60 * 24;
+// <................... My coding ...................>
 
-// Get the remaining amount of days
-let remainingDays = Math.ceil((christmasDate.getTime() - today.getTime()) / (dayMilliseconds));
+// let today = new Date();
 
-// Write it to the page
-document.write("Output:- There are " + remainingDays + " days remaining until Christmas.");
+// let christmasYear = today.getFullYear();
+
+// if (today.getMonth() == 11 && today.getDate() > 25) {
+//   christmasYear = christmasYear + 1;
+// }
+
+// let christmasDate = new Date(christmasYear, 11, 25);
+
+// let dayMilliseconds = 1000 * 60 * 60 * 24;
+
+// let remainingDays = Math.ceil((christmasDate.getTime() - today.getTime()) / (dayMilliseconds));
+
+// document.write("Output:- There are " + remainingDays + " days remaining until Christmas.");

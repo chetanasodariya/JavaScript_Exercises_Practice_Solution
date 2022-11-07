@@ -8,8 +8,30 @@
 </head>
 <body>
     <h1>JavaScript</h1>
-    <p>Question:- </p>
-    <p>Output:- </p>
+    <p>Question:- Write a JavaScript program to check the total marks of a student in various examinations. The student will get A+ grade if the total marks are in the range 89..100 inclusive, if the examination is "Final-exam." the student will get A+ grade and total marks must be greater than or equal to 90. Return true if the student get A+ grade or false otherwise. </p>
+    <p>Output:- 
+
+        <label for="">Enter student first exam marks :-</label>
+        <input type="number" name="firstMarks" id="firstMarks" placeholder="Enter the marks" onKeyPress="if(this.value.length==2) return false;">
+        <br>
+
+        <label for="">Enter student second exam marks :-</label>
+        <input type="number" name="secondMarks" id="secondMarks" placeholder="Enter the marks" onKeyPress="if(this.value.length==2) return false;">
+        <br>
+
+        <label for="">Enter student Final exam marks :-</label>
+        <input type="number" name="finalMarks" id="finalMarks" placeholder="Enter the marks" onKeyPress="if(this.value.length==2) return false;">
+        <br>
+
+        <button type="button" onclick="check()">Click Me</button>
+    
+    </p>
+
+    <p><span id="outputFirstExam"></span></p>
+    <p><span id="outputSecondExam"></span></p>
+    <p><span id="outputFinalExam"></span></p>
+    <p><span id="outputResult1"></span></p>
+    <p><span id="outputResult2"></span></p>
 
     <script src="./js/script.js"></script>
 </body>

@@ -1,32 +1,48 @@
-function multiply(){
-    let firstNumber = document.getElementById("firstNumber").value;
-    let secondNumber = document.getElementById("secondNumber").value;
+// <................... w3resource ...................>
 
-    firstNumber = parseInt(firstNumber);
-    secondNumber = parseInt(secondNumber);
+function multiplyBy() {
+    num1 = document.getElementById("firstNumber").value;
+    num2 = document.getElementById("secondNumber").value;
+    document.getElementById("result").innerHTML = num1 * num2;
+}
 
-    document.getElementById("result").innerHTML = firstNumber * secondNumber;
-
-    console.log(firstNumber);
-    console.log(typeof firstNumber);
-    console.log(secondNumber);
-    console.log(typeof secondNumber);
-
+function divideBy() {
+    num1 = document.getElementById("firstNumber").value;
+    num2 = document.getElementById("secondNumber").value;
+    document.getElementById("result").innerHTML = num1 / num2;
 }
 
 
-function divide(){
-    let firstNumber = document.getElementById("firstNumber").value;
-    let secondNumber = document.getElementById("secondNumber").value;
+// <................... My coding ...................>
 
-    firstNumber = parseInt(firstNumber);
-    secondNumber = parseInt(secondNumber);
+// function multiply(){
+//     let firstNumber = document.getElementById("firstNumber").value;
+//     let secondNumber = document.getElementById("secondNumber").value;
 
-    document.getElementById("result").innerHTML = firstNumber / secondNumber;
+//     firstNumber = parseInt(firstNumber);
+//     secondNumber = parseInt(secondNumber);
 
-    console.log(firstNumber);
-    console.log(typeof firstNumber);
-    console.log(secondNumber);
-    console.log(typeof secondNumber);
+//     document.getElementById("result").innerHTML = firstNumber * secondNumber;
 
-}
+//     console.log(firstNumber);
+//     console.log(typeof firstNumber);
+//     console.log(secondNumber);
+//     console.log(typeof secondNumber);
+
+// }
+
+// function divide(){
+//     let firstNumber = document.getElementById("firstNumber").value;
+//     let secondNumber = document.getElementById("secondNumber").value;
+
+//     firstNumber = parseInt(firstNumber);
+//     secondNumber = parseInt(secondNumber);
+
+//     document.getElementById("result").innerHTML = firstNumber / secondNumber;
+
+//     console.log(firstNumber);
+//     console.log(typeof firstNumber);
+//     console.log(secondNumber);
+//     console.log(typeof secondNumber);
+
+// }
