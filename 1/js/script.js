@@ -35,28 +35,28 @@ console.log("Current Time : " + hour + prepand + " : " + minute + " : " + second
 
 // <................... My coding ...................>
 
-// let d = new Date();
+let d = new Date();
 
-// const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 
-// let day = weekday[d.getDay()];
+let day1 = weekday[d.getDay()];
 
-// let hTime = d.getHours();
+let hTime = d.getHours();
 
-// if(hTime <= 12){
-//     hTime = hTime + " AM";
-// }else{
-//     hTime = hTime + " PM";
-// }
+if(hTime <= 12){
+    hTime = hTime + " AM";
+}else{
+    hTime = hTime + " PM";
+}
 
-// let mTime = d.getMinutes();
+let mTime = d.getMinutes();
 
-// let sTime = d.getSeconds();
+let sTime = d.getSeconds();
 
-// document.getElementById("day").innerHTML = "Today is " + day
+document.getElementById("day").innerHTML = "Today is : " + day1
 
-// document.getElementById("time").innerHTML = "Current time is " + hTime + " : " + mTime + " : " + sTime
+document.getElementById("time").innerHTML = "Current time is " + hTime + " : " + mTime + " : " + sTime
 
-// console.log("Today is " + day);
+console.log("Today is " + day1);
 
-// console.log("Current time is " + hTime + " : " + mTime + " : " + sTime);
+console.log("Current time is " + hTime + " : " + mTime + " : " + sTime);

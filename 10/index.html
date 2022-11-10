@@ -6,37 +6,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Exercises, Practice, Solution.</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <!-- <................... w3resource ...................> -->
 
     <form>
-        1st Number : <input type="text" id="firstNumber" title="number" /><br>
-        2nd Number: <input type="text" id="secondNumber" title="number" /><br>
+        <label for="">1st Number : </label>
+        <input type="text" id="firstNumber" title="number" />
+        <br>
+        
+        <label for="">2nd Number: </label>
+        <input type="text" id="secondNumber" title="number" />
+        <br>
+        
         <input type="button" onClick="multiplyBy()" Value="Multiply" />
+        
         <input type="button" onClick="divideBy()" Value="Divide" />
+    
     </form>
-    <p>The Result is : <br>
+    
+    <p>The Result is : 
+        
+        <br>
+    
         <span id="result"></span>
+    
     </p>
 
 
     <!-- <................... My coding ...................> -->
 
     <!-- <div id="container">
+        
         <h1>JavaScript</h1>
+        
         <p>Question:- Write a JavaScript program to calculate multiplication and division of two numbers (input from user). </p>
         
         
         <form action="">
+        
             <label for="">1st Number:- </label>
             <input type="number" name="firstNumber" id="firstNumber" placeholder="Enter the first number">
+        
             <label for="">2nd Number:- </label>
             <input type="number" name="secondNumber" id="secondNumber" placeholder="Enter the second number">
+        
             <button type="button" class="multiply btn" onclick="multiply()">Multiply</button>
+        
             <button type="button" class="divide btn" onclick="divide()">Divide</button>
+        
             <p>The Result is :- <span id="result"> </span>.</p>
+        
         </form>
 
     </div> -->
